@@ -40,7 +40,7 @@
 
 <section class="hero">
 
-    <div class="container hero-content">
+    <div class="container hero-content" style="display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:55px;align-items:center;">
 
         <div class="hero-text">
 
@@ -69,6 +69,15 @@
 
             </div>
 
+        </div>
+
+        <div class="hero-image" style="overflow:hidden;border-radius:16px;box-shadow:0 20px 45px rgba(0,0,0,.14);">
+            <img
+                src="https://raw.githubusercontent.com/lacipappa/mesterfix/main/images/timur-shakerzianov-kxuz4YrLxSc-unsplash.jpg"
+                alt="Vízvezeték-szerelő javítás közben"
+                style="display:block;width:100%;height:430px;object-fit:cover;"
+                loading="eager"
+            >
         </div>
 
     </div>
@@ -117,9 +126,6 @@
 
             <article class="service-card">
 
-                <!-- Itt a beillesztett kép -->
-                <img src="images/timur-shakerzianov-kxuz4YrLxSc-unsplash.jpg" alt="Fürdőszoba-szerelés" style="width:100%; height:180px; object-fit:cover; border-radius:8px; margin-bottom:15px;">
-
                 <div class="service-icon">🚿</div>
 
                 <h3>
@@ -158,7 +164,7 @@
 
 <section id="rolunk" class="section section-light">
 
-    <div class="container about">
+    <div class="container about" style="align-items:center;">
 
         <div>
 
@@ -173,6 +179,15 @@
         </div>
 
         <div>
+
+            <div style="overflow:hidden;border-radius:14px;margin-bottom:28px;box-shadow:0 12px 30px rgba(0,0,0,.10);">
+                <img
+                    src="https://raw.githubusercontent.com/lacipappa/mesterfix/main/images/joao-paulo-carnevalli-de-oliveira-eKHy3YRiLb8-unsplash.jpg"
+                    alt="Csaptelep és vízvezeték-szerelés"
+                    style="display:block;width:100%;height:280px;object-fit:cover;"
+                    loading="lazy"
+                >
+            </div>
 
             <p>
                 A MesterFix célja, hogy ügyfeleink gyorsan és
@@ -206,22 +221,49 @@
                 Néhány korábbi munkánk
             </h2>
 
+            <p>
+                Néhány példa a vízvezeték-szerelési és fürdőszobai munkákból.
+            </p>
+
         </div>
 
 
-        
+        <div class="references">
 
-            <div class="reference" style="display: flex; flex-direction: column; justify-content: space-between; font-size: 16px; padding: 15px;">
-                <!-- Kép a csaptelepről -->
-                <img src="joao-paulo-carnevalli-de-oliveira-eKHy3YRiLb8-unsplash.jpg" alt="Csaptelep csere" style="width: 100%; height: 120px; object-fit: cover; border-radius: 6px; margin-bottom: 10px;">
-                
-                <span>Csaptelep csere</span>
-                
-                <!-- Az Unsplash forrásmegjelölés kicsi, diszkrét betűvel -->
-                <p style="font-size: 10px; font-weight: normal; opacity: 0.6; margin-top: 5px;">
-                    Photo by <Photo by <a href="https://unsplash.com/@jpcarnevalli?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">João Paulo Carnevalli de Oliveira</a> on <a href="https://unsplash.com/photos/a-faucet-with-water-running-from-its-spout-eKHy3YRiLb8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            <div class="reference" style="display:block;overflow:hidden;padding:0;">
+                <img
+                    src="https://raw.githubusercontent.com/lacipappa/mesterfix/main/images/timur-shakerzianov-kxuz4YrLxSc-unsplash.jpg"
+                    alt="Vízvezeték-javítás – MesterFix referencia"
+                    style="display:block;width:100%;height:220px;object-fit:cover;"
+                    loading="lazy"
+                >
+                <div style="padding:18px 20px;">
+                    Vízvezeték-javítás
+                </div>
+            </div>
 
-                </p>
+            <div class="reference" style="display:block;overflow:hidden;padding:0;">
+                <img
+                    src="https://raw.githubusercontent.com/lacipappa/mesterfix/main/images/joao-paulo-carnevalli-de-oliveira-eKHy3YRiLb8-unsplash.jpg"
+                    alt="Csaptelep csere – MesterFix referencia"
+                    style="display:block;width:100%;height:220px;object-fit:cover;"
+                    loading="lazy"
+                >
+                <div style="padding:18px 20px;">
+                    Csaptelep csere
+                </div>
+            </div>
+
+            <div class="reference" style="display:block;overflow:hidden;padding:0;">
+                <img
+                    src="https://raw.githubusercontent.com/lacipappa/mesterfix/main/images/timur-shakerzianov-kxuz4YrLxSc-unsplash.jpg"
+                    alt="Fürdőszoba-szerelés – MesterFix referencia"
+                    style="display:block;width:100%;height:220px;object-fit:cover;filter:brightness(.92);"
+                    loading="lazy"
+                >
+                <div style="padding:18px 20px;">
+                    Fürdőszoba-szerelés
+                </div>
             </div>
 
         </div>
@@ -278,15 +320,29 @@
 
 <footer class="footer">
 
-    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+    <div class="container">
 
         <p>
             © 2026 MesterFix – Vízvezeték-szerelés
         </p>
 
-        <p style="font-size: 12px; opacity: 0.5;">
-            Fotók: <a href="https://unsplash.com" target="_blank" style="color: inherit; text-decoration: underline;">Unsplash</a>
-            <br><a href="https://unsplash.com/@battlecreekcoffeeroasters?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Battlecreek Coffee Roasters</a> on <a href="https://unsplash.com/photos/man-wearing-black-pullover-hoodie-holding-tool-NfG4rXmceFM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></br>
+        <p style="margin-top:12px;font-size:13px;line-height:1.7;opacity:.75;">
+            Képek: 
+            <a href="https://unsplash.com/@shaker_jpg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">
+                Timur Shakerzianov
+            </a>
+            / 
+            <a href="https://unsplash.com/photos/a-man-fixing-a-water-heater-in-a-room-kxuz4YrLxSc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">
+                Unsplash – vízvezeték-szerelő fotó
+            </a>
+            <br>
+            <a href="https://unsplash.com/@jpcarnevalli?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">
+                João Paulo Carnevalli de Oliveira
+            </a>
+            / 
+            <a href="https://unsplash.com/photos/a-faucet-with-water-running-from-its-spout-eKHy3YRiLb8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">
+                Unsplash – csaptelep fotó
+            </a>
         </p>
 
     </div>
