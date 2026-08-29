@@ -1,23 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
-    
-    // 1. Automatikusan beállítja az aktuális évet a footerben (ha van benne évszám)
-    const footerYear = document.querySelector(".footer p");
-    if (footerYear) {
-        const currentYear = new Date().getFullYear();
-        footerYear.innerHTML = `&copy; ${currentYear} MesterFix – Vízvezeték-szerelés`;
-    }
+function demoForm(event) {
+    event.preventDefault();
+    alert('Ez egy demo űrlap. A végleges ügyféloldalon ide köthető e-mail, Formspree, Google Forms, CRM vagy saját backend.');
+    return false;
+}
 
-    // 2. Opcionális: Finomabb kattintás visszajelzés a szolgáltatás kártyákon
-    const serviceCards = document.querySelectorAll(".service-card");
-    serviceCards.forEach(card => {
-        card.addEventListener("click", () => {
-            // Enyhe vizuális visszajelzés kattintásra
-            card.style.transform = "scale(0.98)";
-            setTimeout(() => {
-                card.style.transform = "";
-            }, 150);
+// A navigáció automatikusan bezárul / visszaáll a görgetés után; nincs szükség külső könyvtárra.
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener('click', function () {
+            // Helyet hagyunk a sticky fejlécnek a böngészők natív smooth scrollja mellett.
+            var target = document.querySelector(link.getAttribute('href'));
+            if (target) target.style.scrollMarginTop = '95px';
         });
     });
-
-    console.log("MesterFix script sikeresen betöltve!");
 });
